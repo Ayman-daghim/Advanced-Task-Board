@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>لوحة المهام والملاحظات</title>
+        <link
+            rel="stylesheet"
+            href="CSS-Advanced-Tasks-Board/advanced-tasks-board.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <!-- لوحة المهام (تطفو يساراً) -->
+            <div class="task-board">
+                <h2><span class="span1-task">📋</span> قائمة المهام</h2>
+                <ul>
+                    <li>شراء الخبز</li>
+                    <li>إنجاز مشروع <span class="sp">CSS</span></li>
+                    <li class="completed">
+                        قراءة <span class="sp">20</span> صفحة
+                    </li>
+                    <li>الاتصال بالدعم الفني</li>
+                </ul>
+            </div>
+
+            <!-- لوحة الملاحظات (تطفو يميناً) -->
+            <div class="notes-board">
+                <h2><span class="span1-notes">📝</span> ملاحظات سريعة</h2>
+                <ul>
+                    <li>اجتماع الساعة <span class="sp">3</span></li>
+                    <li>مراجعة الدروس</li>
+                    <li>شحن البطارية</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+
+            <!-- جدول الإنجازات (سيتم مسح float) -->
+            <div class="achievements-table">
+                <h3 class="h3-table">🏆 آخر الإنجازات</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>المهمة</td>
+                            <td>التاريخ</td>
+                            <td>الدرجة</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>إنهاء HTML</td>
+                            <td>2025-03-01</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>إنهاء CSS</td>
+                            <td>2025-04-01</td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <td>مشروع CSS</td>
+                            <td>اليوم</td>
+                            <td>جاري</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- زر عائم (floating button) -->
+        <button class="floating-btn">+</button>
+    </body>
+</html>
